@@ -8,7 +8,7 @@ addons:
       - nasm
       - diffutils
       - libglew-dev
-      - libglfw3-dev
+      - libglfw3
 compiler:
   - gcc
 cache:
