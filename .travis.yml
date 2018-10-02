@@ -6,14 +6,13 @@ addons:
     packages:
       - nasm
       - diffutils
-      - libglew-dev
 compiler:
   - gcc
 cache:
   directories:
     - ffmpeg-samples
 before_install:
-  - sudo apt-get install libglfw3-dev
+  - sudo apt-get install libglew-dev libglfw3-dev
 script:
   - mkdir -p ffmpeg-samples
   - ./configure --samples=ffmpeg-samples --cc=$CC --enable-libx264 --enable-gpl --enable-opengl --extra-libs='-lGLEW -lEGL'
