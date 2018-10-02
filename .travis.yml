@@ -16,7 +16,7 @@ before_install:
   - sudo apt-get install libglfw3-dev
 script:
   - mkdir -p ffmpeg-samples
-  - ./configure --samples=ffmpeg-samples --cc=$CC
+  - ./configure --samples=ffmpeg-samples --cc=$CC --enable-libx264 --enable-gpl --enable-opengl --extra-libs='-lGLEW -lEGL'
   - make -j 8
   - make fate-rsync
   - make check -j 8
