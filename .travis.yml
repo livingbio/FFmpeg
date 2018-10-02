@@ -1,14 +1,13 @@
 language: c
 sudo: false
-os:
-  - linux
+dist: xenial
 addons:
   apt:
     packages:
       - nasm
       - diffutils
       - libglew-dev
-      - glfw3
+      - libglfw3-dev
 compiler:
   - gcc
 cache:
