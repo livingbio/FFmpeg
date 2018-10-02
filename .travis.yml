@@ -7,12 +7,13 @@ addons:
       - nasm
       - diffutils
       - libglew-dev
-      - libglfw3-dev
 compiler:
   - gcc
 cache:
   directories:
     - ffmpeg-samples
+before_install:
+  - sudo apt-get install libglfw3-dev
 script:
   - mkdir -p ffmpeg-samples
   - ./configure --samples=ffmpeg-samples --cc=$CC
