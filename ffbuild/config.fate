@@ -1,0 +1,1 @@
+config:x86:x86_64:generic:linux:gcc 5.4.0 (Ubuntu 5.4.0-6ubuntu1~16.04.10) 20160609:--enable-libx264 --enable-libvorbis --enable-libvpx --enable-libopus --enable-libmp3lame --enable-gpl --enable-opengl --enable-filter=gltransition --extra-libs='-lGLEW -lglfw' --enable-openssl --enable-nonfree --enable-shared --disable-static --enable-pic --disable-doc
