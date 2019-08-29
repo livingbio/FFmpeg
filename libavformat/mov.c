@@ -4562,6 +4562,8 @@ static int mov_read_tfhd(MOVContext *c, AVIOContext *pb, MOVAtom atom)
     MOVTrackExt *trex = NULL;
     int flags, track_id, i;
 
+    c->fragment.found_tfhd = 1;
+
     avio_r8(pb); /* version */
     flags = avio_rb24(pb);
 
